@@ -1,9 +1,14 @@
 
 import pandas as pd # type: ignore
 import numpy as np # type: ignore
+import os
 
-# Sample data with 1000 rows
-data = {'purchase': np.random.randint(100, 1000, size=990).tolist() + [10000]}  # Adding an outlier
+# Access the data path from the environment variable
+data_path = os.getenv('DATA_PATH') or r"C:\Users\wilson.wanderi\Desktop\customer_orders_dataset.xlsx"
+
+# Load your data
+data = pd.read_excel(data_path, header=0)
+
 final_data = pd.DataFrame(data)
 
 ########################################################

@@ -1,6 +1,11 @@
 import pandas as pd
+import os
 
-data = pd.read_excel(r"C:\Users\wilson.wanderi\Desktop\customer_orders_dataset.xlsx", header=0)
+# Access the data path from the environment variable
+data_path = os.getenv('DATA_PATH') or r"C:\Users\wilson.wanderi\Desktop\customer_orders_dataset.xlsx"
+
+# Load your data
+data = pd.read_excel(data_path, header=0)
 
 # See the Data Types
 data.dtypes
