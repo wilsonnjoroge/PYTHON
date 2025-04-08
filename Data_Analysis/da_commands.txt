@@ -1,0 +1,5 @@
+py -m pip install pandas --> for tabular data manipulations
+py -m pip install matplotlib --> for ploting graphs
+py -m pip install openpyxl --> for reading xlsx docs
+py -m pip install scikit-learn --> for imputing nulls
+
