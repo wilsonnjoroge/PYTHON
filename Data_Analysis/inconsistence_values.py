@@ -23,3 +23,4 @@ data = data[(data['Gender'].notna() & (data['Gender'] != 'Unknown'))]
 print("\nUnique Gender values after dropping:")
 print(data['Gender'].unique())
 
+print(data.dtypes)
