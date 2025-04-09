@@ -4,4 +4,4 @@ py -m pip install openpyxl --> for reading xlsx docs
 py -m pip install scikit-learn --> for imputing nulls
 
 export DATA_PATH="C:\\Users\\wilson.wanderi\\Desktop\\customer_orders_dataset.xlsx" --> Set data path
-
+export DATA_PATH2="C:\\Users\\wilson.wanderi\\Desktop\\Bank+Churn+Data-Solution.xlsx" --> Set data2 path                     
