@@ -10,13 +10,13 @@ print(data.head())
 
 # Get user input
 age_input = int(input("Enter the age: "))
-operation = input("Enter the operation (less than, greater than): ").strip().lower()
+operation = input("Enter the operation (>, <): ").strip().lower()
 loyalty_tier_input = input("Enter the loyalty tier (e.g., Silver, Gold, Bronze): ").strip()
 
 # Construct the query based on user input
-if operation == "less than":
+if operation == "<":
     query_string = f'Age < {age_input} & LoyaltyTier == "{loyalty_tier_input}"'
-elif operation == "greater than":
+elif operation == ">":
     query_string = f'Age > {age_input} & LoyaltyTier == "{loyalty_tier_input}"'
 else:
     print("Invalid operation. Please use 'less than' or 'greater than'.")
